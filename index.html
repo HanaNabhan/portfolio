@@ -35,7 +35,7 @@
             <div class="hero-content">
                 <div class="hero-image">
                     <!-- This WILL work (raw image URL): -->
-                    <img src="https://raw.githubusercontent.com/HanaNabhan/portfolio/main/public/pof%20-%20Copy.jpg" alt="Hana Nabhan Sawan" width="300">    
+                    <img src="https://raw.githubusercontent.com/HanaNabhan/portfolio/main/public/pof%20-%20Copy.jpg" alt="Hana Nabhan Sawan">    
                 </div>
                 <h1 class="hero-title">Hana Nabhan Sawan</h1>
                 <p class="hero-subtitle">Undergraduate Computer Engineer | AI/ML Developer</p>
@@ -300,9 +300,8 @@
             <div class="projects-grid">
                 <!-- Added 3 new unreleased/unpublished projects at the top -->
                 <div class="project-card unreleased">
+                    <div class="project-badge">Unreleased - Security Constraints</div>
                     <div class="project-content">
-                        <div class="project-badge">Unreleased - Security Constraints</div>
-
                         <h3>Industrial CCTV Detection & Tracking System</h3>
                         <p>Self-annotated dataset (3,000+ frames) with object detection, counting, and simple tracking capabilities. Deployed on HuggingFace with JSON schema output format. Industrial-grade accuracy for real-time surveillance and analytics.</p>
                         <div class="project-tags">
@@ -317,9 +316,8 @@
                 </div>
 
                 <div class="project-card unreleased">
+                    <div class="project-badge">Unreleased - Unpublished Paper</div>
                     <div class="project-content">
-                        <div class="project-badge">Unreleased - Security Constraints</div>
-
                         <h3>Arabic Sentiment Analysis for Worker Evaluation</h3>
                         <p>BERT-based transformer model achieving ~97% accuracy for sentiment classification of Arabic text. Built to rate and analyze worker performance through sentiment analysis. Production-ready NLP system with preprocessing pipelines optimized for Egyptian Arabic dialect.</p>
                         <div class="project-tags">
@@ -334,9 +332,8 @@
                 </div>
 
                 <div class="project-card unreleased">
+                    <div class="project-badge">Unreleased - Unpublished Research</div>
                     <div class="project-content">
-                        <div class="project-badge">Unreleased - Unpublished Research</div>
-
                         <h3>Dynamic Evacuation Route Optimization with VLM & Detection</h3>
                         <p>Advanced research integrating Florence Vision Language Model (VLM) for scene understanding with EfficientNet for object detection. Implements dynamic evacuation route optimization using Dijkstra's algorithm and D* pathfinding for real-time navigation in emergency scenarios.</p>
                         <div class="project-tags">
@@ -349,24 +346,11 @@
                         <p class="project-note"><strong>Note:</strong> Unreleased and unpublished for security constraints. <strong>Contact for details.</strong></p>
                     </div>
                 </div>
-                <div class="project-card">
-                    <div class="project-content">
-                        <h3>Sales Forecasting with LSTM & XGBoost</h3>
-                        <p>Conducted EDA and evaluated multiple forecasting models (Prophet, SARIMA, ARIMA, LSTM, XGBoost). LSTM and XGBoost outperformed others with full documentation on GitHub.</p>
-                        <div class="project-tags">
-                            <span class="tag">LSTM</span>
-                            <span class="tag">XGBoost</span>
-                            <span class="tag">Time Series</span>
-                        </div>
-                        <a href="#" class="project-link">
-                            <i class="fas fa-external-link-alt"></i> View Project
-                        </a>
-                    </div>
-                </div>
+
                 <!-- Existing projects -->
                 <div class="project-card">
                     <div class="project-content">
-                        <h3>Lane Curve Detection with ROS 2</h3>
+                        <h3>Lane Curve Detection using ROS 2</h3>
                         <p>Developed ROS 2 node for LiDAR-based lane detection with PID control for steering and throttle commands. Achieved 3rd place in CDC2024 qualification.</p>
                         <div class="project-tags">
                             <span class="tag">ROS 2</span>
@@ -409,7 +393,20 @@
                     </div>
                 </div>
 
-                
+                <div class="project-card">
+                    <div class="project-content">
+                        <h3>Sales Forecasting with LSTM & XGBoost</h3>
+                        <p>Conducted EDA and evaluated multiple forecasting models (Prophet, SARIMA, ARIMA, LSTM, XGBoost). LSTM and XGBoost outperformed others with full documentation on GitHub.</p>
+                        <div class="project-tags">
+                            <span class="tag">LSTM</span>
+                            <span class="tag">XGBoost</span>
+                            <span class="tag">Time Series</span>
+                        </div>
+                        <a href="#" class="project-link">
+                            <i class="fas fa-external-link-alt"></i> View Project
+                        </a>
+                    </div>
+                </div>
 
                 <div class="project-card">
                     <div class="project-content">
@@ -525,70 +522,118 @@
     </section>
 
     <!-- Certifications Section -->
-    <!-- Added new Certifications & Training section -->
+    <!-- Updated to support certificate images with fallback icons -->
     <section class="certifications">
         <div class="container">
             <h2 class="section-title">Certifications & Training</h2>
+            <p class="certifications-subtitle">20+ Professional Certifications and Training Programs</p>
             <div class="certifications-grid">
-                <div class="cert-card">
-                    <div class="cert-icon">
-                        <i class="fas fa-certificate"></i>
+                <!-- Each cert-card can have both image and icon - image takes priority if provided -->
+                <div class="cert-card" data-cert="Generative AI">
+                    <div class="cert-image-container">
+                        <!-- Add image src here when you have certificate images -->
+                        <!-- <img src="path/to/cert-image.png" alt="Generative AI Certification" class="cert-image"> -->
+                        <div class="cert-icon">
+                            <i class="fas fa-certificate"></i>
+                        </div>
                     </div>
                     <h4>Generative AI Trainee</h4>
                     <p>ITI</p>
                 </div>
-                <div class="cert-card">
-                    <div class="cert-icon">
-                        <i class="fas fa-certificate"></i>
+
+                <div class="cert-card" data-cert="Computer Vision">
+                    <div class="cert-image-container">
+                        <div class="cert-icon">
+                            <i class="fas fa-certificate"></i>
+                        </div>
                     </div>
                     <h4>Computer Vision Trainee</h4>
                     <p>NTI - Summer Training</p>
                 </div>
-                <div class="cert-card">
-                    <div class="cert-icon">
-                        <i class="fas fa-certificate"></i>
+
+                <div class="cert-card" data-cert="C and Embedded C">
+                    <div class="cert-image-container">
+                        <div class="cert-icon">
+                            <i class="fas fa-certificate"></i>
+                        </div>
                     </div>
                     <h4>C and Embedded C Trainee</h4>
                     <p>DEY – NTI</p>
                 </div>
-                <div class="cert-card">
-                    <div class="cert-icon">
-                        <i class="fas fa-certificate"></i>
+
+                <div class="cert-card" data-cert="AI and IoT">
+                    <div class="cert-image-container">
+                        <div class="cert-icon">
+                            <i class="fas fa-certificate"></i>
+                        </div>
                     </div>
                     <h4>Artificial Intelligence and IoT Trainee</h4>
                     <p>DEY – NTI</p>
                 </div>
-                <div class="cert-card">
-                    <div class="cert-icon">
-                        <i class="fas fa-certificate"></i>
+
+                <div class="cert-card" data-cert="Deep Learning">
+                    <div class="cert-image-container">
+                        <div class="cert-icon">
+                            <i class="fas fa-certificate"></i>
+                        </div>
                     </div>
                     <h4>Deep Learning Specialization</h4>
                     <p>deeplearning.AI (Coursera)</p>
                 </div>
-                <div class="cert-card">
-                    <div class="cert-icon">
-                        <i class="fas fa-certificate"></i>
+
+                <div class="cert-card" data-cert="Self-Driving Cars">
+                    <div class="cert-image-container">
+                        <div class="cert-icon">
+                            <i class="fas fa-certificate"></i>
+                        </div>
                     </div>
                     <h4>Self-Driving Cars Specialization</h4>
                     <p>University of Toronto (Coursera)</p>
                 </div>
-                <div class="cert-card">
-                    <div class="cert-icon">
-                        <i class="fas fa-certificate"></i>
+
+                <div class="cert-card" data-cert="Data Analytics">
+                    <div class="cert-image-container">
+                        <div class="cert-icon">
+                            <i class="fas fa-certificate"></i>
+                        </div>
                     </div>
                     <h4>Data Analytics & Data Science Job Simulation</h4>
                     <p>Forage</p>
                 </div>
-                <div class="cert-card">
-                    <div class="cert-icon">
-                        <i class="fas fa-certificate"></i>
+
+                <div class="cert-card" data-cert="AVR Architecture">
+                    <div class="cert-image-container">
+                        <div class="cert-icon">
+                            <i class="fas fa-certificate"></i>
+                        </div>
                     </div>
                     <h4>AVR Architecture & Interfacing Diploma</h4>
                     <p>Professional Certification</p>
                 </div>
+
+                <!-- Additional certificates can be added here -->
+                <!-- Template for adding more certificates:
+                <div class="cert-card" data-cert="Your Certification Name">
+                    <div class="cert-image-container">
+                        <img src="path/to/cert-image.png" alt="Your Certification" class="cert-image">
+                    </div>
+                    <h4>Your Certification Title</h4>
+                    <p>Issuing Organization</p>
+                </div>
+                -->
             </div>
+            <p class="certifications-note">Click any certificate card to view full details or zoom image</p>
         </div>
     </section>
+
+    <!-- Certificate Modal for viewing full certificate images -->
+    <div class="cert-modal" id="certModal">
+        <div class="cert-modal-content">
+            <span class="cert-modal-close">&times;</span>
+            <img class="cert-modal-image" id="certModalImage" src="/placeholder.svg" alt="Certificate">
+            <h3 class="cert-modal-title" id="certModalTitle"></h3>
+        </div>
+    </div>
 
     <!-- Contact Section -->
     <section id="contact" class="contact">
